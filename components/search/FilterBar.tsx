@@ -58,13 +58,14 @@ export function FilterBar({
         <div className="seg" role="group" aria-label="Operator">
           {(
             [
-              ['all', 'All centres'],
-              ['government', 'Anchor + partner'],
-              ['anchor', 'Anchor only'],
-            ] as [SchemeFilter, string][]
-          ).map(([value, label]) => (
-            <button key={value} type="button" aria-pressed={filters.scheme === value} onClick={() => onChange({ scheme: value })}>
-              {label}
+              ['all', 'All centres', 'All'],
+              ['government', 'Anchor + partner', 'Anchor + partner'],
+              ['anchor', 'Anchor only', 'Anchor'],
+            ] as [SchemeFilter, string, string][]
+          ).map(([value, label, short]) => (
+            <button key={value} type="button" className="whitespace-nowrap" aria-pressed={filters.scheme === value} onClick={() => onChange({ scheme: value })}>
+              <span className="sm:hidden">{short}</span>
+              <span className="hidden sm:inline">{label}</span>
             </button>
           ))}
         </div>

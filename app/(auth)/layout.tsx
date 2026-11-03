@@ -1,9 +1,9 @@
 // The right side previews the waitlist board, so parents see what the app does
 // for them before they sign in.
 const PREVIEW = [
-  { name: 'PCF Sparkletots @ Punggol Blk 271', status: 'Offered', tone: 'text-offered border-offered/30 bg-offered/10', meta: 'Reply by 14 Nov' },
-  { name: 'My First Skool @ Sumang Walk', status: 'Waiting', tone: 'text-waiting border-waiting/30 bg-waiting/10', meta: '6th in line, called 2 Nov' },
-  { name: 'Little Seeds Preschool', status: 'Waiting', tone: 'text-waiting border-waiting/30 bg-waiting/10', meta: 'Registered 18 Sep' },
+  { name: 'Little Harbour Preschool @ Punggol', status: 'Offered', tone: 'text-offered border-offered/30 bg-offered/10', meta: 'Reply by 14 Nov' },
+  { name: 'Kampong Kids @ Sumang Walk', status: 'Waiting', tone: 'text-waiting border-waiting/30 bg-waiting/10', meta: '6th in line, called 2 Nov' },
+  { name: 'Sunbeam Infant Care', status: 'Waiting', tone: 'text-waiting border-waiting/30 bg-waiting/10', meta: 'Registered 18 Sep' },
 ]
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
@@ -14,7 +14,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         <div className="max-w-md">
           <p className="label">Infant care from Jan 2027</p>
           <p className="mt-2 font-display text-3xl leading-snug">
-            Three centres, one list. You pay <span className="text-primary">$390 a month</span> after subsidy at the
+            Three centres, one list. You pay <span className="text-primary">$360 a month</span> after subsidy at the
             one that said yes.
           </p>
 
